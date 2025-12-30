@@ -131,7 +131,8 @@ export default function Index() {
 
             <section className="py-16 px-4">
               <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Особенности сервера</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <Card className="bg-card border-border hover:border-primary transition-colors">
                     <CardHeader>
                       <Icon name="Users" size={40} className="text-primary mb-4" />
@@ -167,6 +168,47 @@ export default function Index() {
                     <CardContent>
                       <p className="text-muted-foreground">
                         Выживание в команде против зомби и природы. Строй базы, торгуй с игроками, помогай другим.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-card border-border hover:border-secondary transition-colors">
+                    <CardHeader>
+                      <Icon name="ScrollText" size={40} className="text-secondary mb-4" />
+                      <CardTitle className="text-2xl">Система квестов</CardTitle>
+                      <CardDescription>Выполняй задания</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Уникальные квесты с наградами. Исследуй мир, помогай NPC и получай ценные предметы.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+                  <Card className="bg-card border-border hover:border-primary transition-colors">
+                    <CardHeader>
+                      <Icon name="Hammer" size={40} className="text-primary mb-4" />
+                      <CardTitle className="text-2xl">Расширенный крафт</CardTitle>
+                      <CardDescription>Создавай уникальные предметы</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Продвинутая система крафта позволяет создавать эксклюзивное оружие, броню и инструменты. Комбинируй ресурсы и открывай новые рецепты.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-card border-border hover:border-secondary transition-colors">
+                    <CardHeader>
+                      <Icon name="Shield" size={40} className="text-secondary mb-4" />
+                      <CardTitle className="text-2xl">Безопасные зоны</CardTitle>
+                      <CardDescription>Торговля и отдых</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Специальные безопасные локации для торговли между игроками, обмена ресурсами и планирования совместных экспедиций.
                       </p>
                     </CardContent>
                   </Card>
