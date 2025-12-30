@@ -45,8 +45,8 @@ const rules = [
     content: 'Запрещены читы, баги, дюпы и эксплойты. За нарушение - перманентный бан без возможности разбана.'
   },
   {
-    title: 'PvP правила',
-    content: 'Убийство в сейфзоне запрещено. KOS разрешен везде кроме торговых точек. Макросы на стрельбу запрещены.'
+    title: 'PVE правила',
+    content: 'Убийство других игроков строго запрещено. Сервер ориентирован на кооперативное выживание против зомби и окружающей среды.'
   },
   {
     title: 'Постройки',
@@ -67,7 +67,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Icon name="Skull" size={32} className="text-primary" />
-            <span className="text-2xl font-bold text-foreground">DAYZ RUSSIA</span>
+            <span className="text-2xl font-bold text-foreground">BAY OF LIFE/PVE</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <button onClick={() => setActiveTab('home')} className={`text-sm font-medium transition-colors hover:text-primary ${activeTab === 'home' ? 'text-primary' : 'text-muted-foreground'}`}>
@@ -94,13 +94,13 @@ export default function Index() {
           <>
             <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background z-10" />
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1920')] bg-cover bg-center opacity-20" />
+              <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/files/1000306212.jpg')] bg-cover bg-center opacity-30" />
               <div className="relative z-20 text-center px-4 animate-fade-in">
                 <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">
-                  ВЫЖИВАЙ
+                  BAY OF LIFE
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Самый хардкорный DayZ сервер в России. PvP, рейды, выживание. Только сильнейшие останутся в живых.
+                  PVE сервер DayZ с дружелюбным комьюнити. Исследуй, строй, выживай без постоянной угрозы от других игроков.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
@@ -147,12 +147,12 @@ export default function Index() {
                   <Card className="bg-card border-border hover:border-primary transition-colors">
                     <CardHeader>
                       <Icon name="Sword" size={40} className="text-destructive mb-4" />
-                      <CardTitle className="text-2xl">Хардкор PvP</CardTitle>
-                      <CardDescription>Без поблажек</CardDescription>
+                      <CardTitle className="text-2xl">PVE режим</CardTitle>
+                      <CardDescription>Кооператив и дружба</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        Настоящее выживание с реалистичным уроном и экономикой. Только сильные выживут.
+                        Выживание в команде против зомби и природы. Строй базы, торгуй с игроками, помогай другим.
                       </p>
                     </CardContent>
                   </Card>
@@ -409,10 +409,10 @@ export default function Index() {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Icon name="Skull" size={28} className="text-primary" />
-            <span className="text-xl font-bold">DAYZ RUSSIA</span>
+            <span className="text-xl font-bold">BAY OF LIFE</span>
           </div>
           <p className="text-muted-foreground text-sm">
-            © 2025 DayZ Russia. Все права защищены. Проект не связан с Bohemia Interactive.
+            © 2025 Bay of Life. Все права защищены. Проект не связан с Bohemia Interactive.
           </p>
           <div className="flex justify-center space-x-6 mt-4">
             <button className="text-muted-foreground hover:text-primary transition-colors">
