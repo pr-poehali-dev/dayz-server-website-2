@@ -242,7 +242,7 @@ export default function Index() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div className="relative overflow-hidden rounded-lg group">
                     <img 
-                      src="https://cdn.poehali.dev/projects/1a12b4df-8a86-4057-92b8-96719167ab3f/files/2747c9e3-61c3-43ee-ac92-c9aee005fa35.jpg" 
+                      src="https://cdn.poehali.dev/projects/1a12b4df-8a86-4057-92b8-96719167ab3f/files/5bbd1f30-4fd1-4d6f-aa3a-6ccae823917e.jpg" 
                       alt="Автопарк RUSForma" 
                       className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-110"
                     />
