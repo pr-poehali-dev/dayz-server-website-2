@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -60,6 +61,15 @@ const rules = [
 
 export default function Index() {
   const [activeTab, setActiveTab] = useState('home');
+  const { toast } = useToast();
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+    toast({
+      title: 'Скопировано!',
+      description: `IP адрес ${text} скопирован в буфер обмена`,
+    });
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -102,10 +112,14 @@ export default function Index() {
                 <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
                   PVE сервер DayZ с дружелюбным комьюнити. Исследуй, строй, выживай без постоянной угрозы от других игроков.
                 </p>
-                <div className="flex items-center justify-center gap-2 mb-6">
+                <button
+                  onClick={() => copyToClipboard('185.135.83.35:2314')}
+                  className="flex items-center justify-center gap-2 mb-6 px-4 py-2 rounded-lg bg-accent hover:bg-accent/80 transition-colors group"
+                >
                   <Icon name="Server" size={20} className="text-primary" />
                   <span className="text-lg font-mono text-primary">185.135.83.35:2314</span>
-                </div>
+                  <Icon name="Copy" size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                </button>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
                     <Icon name="Gamepad2" size={20} className="mr-2" />
@@ -507,7 +521,16 @@ export default function Index() {
                     <p className="text-muted-foreground mb-2">
                       Добавь в избранное:
                     </p>
-                    <p className="text-foreground font-mono text-lg">185.135.83.35:2314</p>
+                    <div className="flex items-center gap-2">
+                      <p className="text-foreground font-mono text-lg flex-1">185.135.83.35:2314</p>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={() => copyToClipboard('185.135.83.35:2314')}
+                      >
+                        <Icon name="Copy" size={16} />
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </div>
