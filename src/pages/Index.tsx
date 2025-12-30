@@ -186,7 +186,7 @@ export default function Index() {
                   </Card>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                   <Card className="bg-card border-border hover:border-primary transition-colors">
                     <CardHeader>
                       <Icon name="Hammer" size={40} className="text-primary mb-4" />
@@ -209,6 +209,19 @@ export default function Index() {
                     <CardContent>
                       <p className="text-muted-foreground">
                         Специальные безопасные локации для торговли между игроками, обмена ресурсами и планирования совместных экспедиций.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-card border-border hover:border-primary transition-colors">
+                    <CardHeader>
+                      <Icon name="Car" size={40} className="text-primary mb-4" />
+                      <CardTitle className="text-2xl">Автопарк</CardTitle>
+                      <CardDescription>Реалистичный транспорт</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Обширный автопарк с реалистичными машинами. Никаких розовых скинов — только аутентичный постапокалипсис.
                       </p>
                     </CardContent>
                   </Card>
