@@ -99,9 +99,13 @@ export default function Index() {
                 <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">
                   BAY OF LIFE
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
                   PVE сервер DayZ с дружелюбным комьюнити. Исследуй, строй, выживай без постоянной угрозы от других игроков.
                 </p>
+                <div className="flex items-center justify-center gap-2 mb-6">
+                  <Icon name="Server" size={20} className="text-primary" />
+                  <span className="text-lg font-mono text-primary">185.135.83.35:2314</span>
+                </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
                     <Icon name="Gamepad2" size={20} className="mr-2" />
@@ -489,7 +493,7 @@ export default function Index() {
                     <p className="text-muted-foreground mb-2">
                       Для официальных обращений и технических вопросов:
                     </p>
-                    <p className="text-foreground font-mono">support@dayzrussia.ru</p>
+                    <p className="text-foreground font-mono">support@bayoflife.ru</p>
                   </CardContent>
                 </Card>
 
@@ -503,7 +507,7 @@ export default function Index() {
                     <p className="text-muted-foreground mb-2">
                       Добавь в избранное:
                     </p>
-                    <p className="text-foreground font-mono text-lg">93.184.216.34:2302</p>
+                    <p className="text-foreground font-mono text-lg">185.135.83.35:2314</p>
                   </CardContent>
                 </Card>
               </div>
