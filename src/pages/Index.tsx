@@ -233,6 +233,55 @@ export default function Index() {
               </div>
             </section>
 
+            <section className="py-16 px-4 bg-accent/50">
+              <div className="container mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Транспорт и уникальные предметы</h2>
+                <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
+                  Обширный автопарк от RUSForma, вертолёты для быстрого перемещения и уникальные предметы для выживания
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div className="relative overflow-hidden rounded-lg group">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/1a12b4df-8a86-4057-92b8-96719167ab3f/files/2747c9e3-61c3-43ee-ac92-c9aee005fa35.jpg" 
+                      alt="Автопарк RUSForma" 
+                      className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-2xl font-bold mb-2">Автопарк RUSForma</h3>
+                      <p className="text-muted-foreground">Реалистичные автомобили без розовых скинов</p>
+                    </div>
+                  </div>
+
+                  <div className="relative overflow-hidden rounded-lg group">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/1a12b4df-8a86-4057-92b8-96719167ab3f/files/0c9a4a34-255b-4ffd-b28f-e95e0a906504.jpg" 
+                      alt="Вертолёты" 
+                      className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-2xl font-bold mb-2">Воздушный транспорт</h3>
+                      <p className="text-muted-foreground">Вертолёты для быстрого перемещения по карте</p>
+                    </div>
+                  </div>
+
+                  <div className="relative overflow-hidden rounded-lg group">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/1a12b4df-8a86-4057-92b8-96719167ab3f/files/e61737fd-19b9-4b30-8d83-74f0d78ce140.jpg" 
+                      alt="Уникальные предметы" 
+                      className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-2xl font-bold mb-2">Уникальные предметы</h3>
+                      <p className="text-muted-foreground">Майнинг-фермы, игровые автоматы и многое другое</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <section className="py-16 px-4 bg-accent">
               <div className="container mx-auto text-center">
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">Статистика сервера</h2>
