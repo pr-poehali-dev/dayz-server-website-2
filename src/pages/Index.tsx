@@ -115,6 +115,20 @@ export default function Index() {
               </div>
             </section>
 
+            <section className="py-16 px-4 bg-accent/50">
+              <div className="container mx-auto max-w-4xl text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">О сервере</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Bay of Life — это DayZ сервер с режимом PVE, где вы можете наслаждаться игрой без страха быть убитым другими игроками. 
+                  Здесь акцент на кооперативное выживание, строительство баз, торговлю и исследование мира.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Наше дружелюбное комьюнити всегда готово помочь новичкам. Присоединяйся к нам и открой для себя DayZ с новой стороны — 
+                  без токсичности и постоянного PvP, но с настоящим духом выживания и сотрудничества.
+                </p>
+              </div>
+            </section>
+
             <section className="py-16 px-4">
               <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
