@@ -462,7 +462,7 @@ export default function Index() {
                 Свяжитесь с нами по любым вопросам
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <Card className="bg-card border-border hover:border-primary transition-colors">
                   <CardHeader>
                     <Icon name="MessageSquare" size={40} className="text-primary mb-4" />
@@ -493,6 +493,28 @@ export default function Index() {
                     <Button className="w-full bg-[#0088cc] hover:bg-[#006699] text-white">
                       <Icon name="Send" size={18} className="mr-2" />
                       Подписаться
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card border-border hover:border-primary transition-colors">
+                  <CardHeader>
+                    <div className="w-10 h-10 rounded-full bg-[#0077FF] flex items-center justify-center mb-4">
+                      <span className="text-white text-2xl font-bold">ВК</span>
+                    </div>
+                    <CardTitle className="text-2xl">ВКонтакте</CardTitle>
+                    <CardDescription>Наше сообщество</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-4">
+                      Вступай в нашу группу ВК, чтобы следить за новостями и общаться с игроками.
+                    </p>
+                    <Button 
+                      className="w-full bg-[#0077FF] hover:bg-[#0066DD] text-white"
+                      onClick={() => window.open('https://vk.com/club235032925', '_blank')}
+                    >
+                      <Icon name="Users" size={18} className="mr-2" />
+                      Вступить
                     </Button>
                   </CardContent>
                 </Card>
@@ -564,14 +586,20 @@ export default function Index() {
             © 2025 Bay of Life. Все права защищены. Проект не связан с Bohemia Interactive.
           </p>
           <div className="flex justify-center space-x-6 mt-4">
-            <button className="text-muted-foreground hover:text-primary transition-colors">
+            <button 
+              className="text-muted-foreground hover:text-primary transition-colors"
+              onClick={() => window.open('https://vk.com/club235032925', '_blank')}
+              aria-label="ВКонтакте"
+            >
+              <div className="w-5 h-5 rounded-full bg-current flex items-center justify-center">
+                <span className="text-background text-xs font-bold">ВК</span>
+              </div>
+            </button>
+            <button className="text-muted-foreground hover:text-primary transition-colors" aria-label="Discord">
               <Icon name="MessageSquare" size={20} />
             </button>
-            <button className="text-muted-foreground hover:text-primary transition-colors">
+            <button className="text-muted-foreground hover:text-primary transition-colors" aria-label="Telegram">
               <Icon name="Send" size={20} />
-            </button>
-            <button className="text-muted-foreground hover:text-primary transition-colors">
-              <Icon name="Youtube" size={20} />
             </button>
           </div>
         </div>
